@@ -1,50 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bicibletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo
-    na sua velocidade com a Bickcraft."> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bicibletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo
+    na sua velocidade com a Bickcraft."
+    />
     <title>Bickcraft - Bicicletas Elétricas de Alta Precisão e Qualidade</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700;800&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700;800&family=Inter:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
-     <header class="header" id="header">
-        <nav class="header-nav container">
-            <a href="index.html" class="header__logo" aria-label="Bickcraft - Página inicial">
-            <svg width="138" height="28" viewBox="0 0 138 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <text x="0" y="22" font-family="Oxanium, sans-serif" font-weight="800" font-size="24px" fill="#FEFEFE" letter-spacing="0.5">Bickcraft</text>
+    <header class="header" id="header">
+      <nav class="header-nav container">
+        <a
+          href="index.html"
+          class="header__logo"
+          aria-label="Bickcraft - Página inicial"
+        >
+          <svg
+            width="138"
+            height="28"
+            viewBox="0 0 138 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <text
+              x="0"
+              y="22"
+              font-family="Oxanium, sans-serif"
+              font-weight="800"
+              font-size="24px"
+              fill="#FEFEFE"
+              letter-spacing="0.5"
+            >
+              Bickcraft
+            </text>
+          </svg>
+        </a>
 
-            </svg>    
-            </a>
+        <button
+          class="header__hamburger"
+          id="hamburger"
+          arial-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-            <button class="header__hamburger" id="hamburger" arial-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="header__menu" id="menu" role="list">
-                <li><a href="bicicletas.html" class="header__link">Bicicletas</a></li>
-                <li><a href="seguros.html" class="header__link">Seguros</a></li>
-                <li><a href="contato.html" class="header__link">Contato</a></li> 
-            </ul>
-        </nav>
+        <ul class="header__menu" id="menu" role="list">
+          <li><a href="bicicletas.html" class="header__link">Bicicletas</a></li>
+          <li><a href="seguros.html" class="header__link">Seguros</a></li>
+          <li><a href="contato.html" class="header__link">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- INTRODUÇÃO / HERO -->
+      <!-- INTRODUÇÃO / HERO -->
 
-        <section class="intro" aria-label="Introdução">
-            <div class="intro__text" data-anime="left">
-                <h1 class="intro__titulo">Bicicletas feitas <span>sob medida.</span></h1>
-                
-            </div>
-        </section>
+      <section class="intro" aria-label="Introdução">
+        <div class="intro__content container">
+          <div class="intro__text" data-anime="left">
+            <h1 class="intro__titulo">
+              Bicicletas feitas <span>sob medida.</span>
+            </h1>
+            <p class="intro__desc">
+              Bicicletas elétricas de alta precisão e qualidade, feitas sob
+              medida para você. Explore o mundo na sua velocidade com a
+              Bikcraft.
+            </p>
+            <a href="bicicletas.html" class="btn">Escolha a sua</a>
+          </div>
+          <div class="intro__img" data-anime="right">
+            <img
+              src="https://www.origamid.com/projetos/bikcraft/img/fotos/introducao.jpg"
+              alt="Bicicleta elétrica preta."
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Bicicletas / PRODUTOS -->
+
+      <section class="bicicletas" id="bicicletas" aria-labelledby="bicicletas-titulo">
+        <div class="container">
+          <p class="subtitulo" data-anime="up">escolha a sua</p>
+            <h2 class="titulo" id="bicicletas-titulo" data-anime="up"></h2>
+            <ul class="bicicletas__Lista" role="list">
+                <li class="bicicleta__item" data-anime="up">
+                    <a href="bicicletas/magic.html" class="bicicleta__link">
+                        <img src="https://www.origamid.com/projetos/bikcraft/img/bicicletas/magic-might.jpg" 
+                        alt="Bicicleta preta Magic Might" />
+                        <div class="bicicleta__info">
+                            <h3 class="bicicleta__nome">Magic Might</h3>
+                            <span class="bicicleta__preco">R$ 2499</span>
+                        </div>
+                    </a>
+                    
+                </li>
+
+                <li class="bicicleta__item" data-anime="up">
+                    <a href="bicicletas/nimbus.html" class="bicicleta__link">
+                        <img src="https://www.origamid.com/projetos/bikcraft/img/bicicletas/nimbus-stark.jpg" 
+                        alt="Bicicleta preta Nimbus Stark" />
+                        <div class="bicicleta__info">
+                            <h3 class="bicicleta__nome">Nimbus Stark</h3>
+                            <span class="bicicleta__preco">R$4999</span>
+                        </div>
+                    </a>
+                    
+                </li>
+                <li class="bicicleta__item" data-anime="up">
+                    <a href="bicicletas/nebula.html" class="bicicleta__link">
+                        <img src="https://www.origamid.com/projetos/bikcraft/img/bicicletas/nebula-cosmic.jpg" 
+                        alt="Bicicleta preta Nebula Cosmic" />
+                        <div class="bicicleta__info">
+                            <h3 class="bicicleta__nome">Nebula Cosmic</h3>
+                            <span class="bicicleta__preco">R$3999</span>
+                        </div>
+                    </a>
+                    
+                </li>
+            </ul>
+        </div>
+      </section>
+
+      
     </main>
-</body>
+  </body>
 </html>
