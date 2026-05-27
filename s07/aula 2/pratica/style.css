@@ -1,0 +1,84 @@
+/* Reset básico para zerar margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o rodapé fique sempre embaixo */
+    background-color: #aff60b;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    background-color: #021907; /* Tom de azul escuro similar ao da foto */
+    color: rgb(157, 241, 161);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between; /* Empurra o logo para a esquerda e links para a direita */
+    align-items: center;
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header .nav a {
+    color: rgb(172, 242, 102);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Área Central (As 2 Colunas) --- */
+.main-container {
+    flex: 1; /* Faz essa área ocupar todo o espaço restante entre header e footer */
+    display: flex;
+    justify-content: center; /* Centraliza as colunas horizontalmente */
+    align-items: center;     /* Centraliza as colunas verticalmente */
+    gap: 20px;               /* Espaçamento entre as duas colunas */
+    padding: 40px;
+}
+
+.column {
+    border: 1px solid #333;  /* Borda escura igual à imagem */
+    width: 300px;            /* Largura de cada caixa */
+    height: 300px;           /* Altura de cada caixa */
+    padding: 15px;
+    text-align: center;
+}
+
+/* --- Rodapé --- */
+.footer {
+    background-color: #010600;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade: Se a tela for pequena (celular), as colunas ficam uma abaixo da outra */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .header .nav a {
+        margin: 0 10px;
+    }
+}
